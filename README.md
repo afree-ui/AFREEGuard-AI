@@ -87,6 +87,6 @@ This project is licensed under the MIT License.
 
 ⸻
 
-👉 Next step: you can copy this into your README.md (replace what’s inside now).
+✨ *Built with a vision for a safer AI future, powered by blockchain accountability.*  
 
-Do you want me to format it directly in Markdown so you can just paste it straight into GitHub without editing?
+👉 "Updated README with project details".
