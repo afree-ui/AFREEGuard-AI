@@ -87,7 +87,7 @@ We welcome contributions! Please open issues, share ideas, or create pull reques
 ---
 
 ## 📜 License  
-MIT License – Free to use, fork, and contribute.  
+MIT License – Free to use, fork, and contribute. 
 
 ---
 
