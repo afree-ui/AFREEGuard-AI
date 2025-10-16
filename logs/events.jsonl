@@ -1,0 +1,3 @@
+{"ts": "2025-10-15T12:34:16.353199Z", "domain": "web3", "action": "propose_vote", "blocked": true, "reason": "invalid wallet address", "params": {"wallet_address": "SOME_FAKE_WALLET", "proposal": "Change X"}}
+{"ts": "2025-10-15T12:34:16.366306Z", "domain": "web3", "action": "propose_vote", "blocked": true, "reason": "invalid wallet address", "params": {"wallet_address": "SONYLXSL4Wv6D4YGLBQBLlH7C4JAXMFK5CZVKCQ06LQK7GCRWJAY", "proposal": "Change X"}}
+{"ts": "2025-10-15T12:34:30.882847Z", "domain": "web3", "action": "propose_vote", "blocked": false, "reason": "Allowed by NFT membership", "params": {"wallet_address": "SONYLXSLS4WV6DW4YGILBQBLIFH74CJAXMFXK5CZVXCQGO6LQK7GCRWJAY"}}

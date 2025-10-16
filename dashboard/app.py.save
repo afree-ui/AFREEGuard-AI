@@ -1,0 +1,48 @@
+import streamlit as st
+import json, os, time
+import os
+
+LOG_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "logs")
+LOG_PATH = os.path.join(LOG_DIR, "events.jsonl")
+
+st.title("Guardrail PoC — Monitoring Dashboard")
+st.write("Live view of agent actions, guardrail decisions, and domains.")
+# --- Reset Logs Button ---
+if st.sidebar.button("Reset logs", type="primary"):
+    os.makedirs(LOG_DIR, exist_ok=True)
+    with open(LOG_PATH, "w", encoding="utf-8") as f:
+        f.write("")
+    st.success("Logs cleared.")
+    st.experimental_rerun()  # refresh immediately
+
+refresh_sec = st.sidebar.slider("Auto-refresh (sec)", 1, 10, 3)
+placeholder = st.empty()
+
+def load_logs(limit=2000):
+    if not os.path.exists(LOG_PATH):
+        return []
+    rows = []
+    with open(LOG_PATH, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rows.append(json.loads(line))
+            except Exception:
+                pass
+    return rows[-limit:]
+
+while True:
+    rows = load_logs()
+    blocked = [r for r in rows if not r["decision"]["allow"]]
+    allowed = [r for r in rows if r["decision"]["allow"]]
+
+    with placeholder.container():
+        st.subheader("Summary")
+        c1, c2 = st.columns(2)
+        c1.metric("Allowed actions", len(allowed))
+        c2.metric("Blocked actions", len(blocked))
+
+        st.subheader("Recent Events")
+        st.dataframe(rows[::-1])
+
+    time.sleep(refresh_sec)
+

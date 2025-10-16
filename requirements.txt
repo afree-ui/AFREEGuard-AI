@@ -1,0 +1,8 @@
+langchain
+fastapi
+uvicorn
+pydantic
+streamlit
+numpy
+pandas
+pyyaml

@@ -1,0 +1,23 @@
+global:
+  blocked_keywords:
+    - "bomb"
+    - "hack system"
+
+domains:
+  finance:
+    block_advice: true
+    allowed_info_topics:
+      - "etf"
+      - "inflation"
+      - "diversification"
+      - "risk management"
+      - "compounding"
+
+  web3:
+    block_execute: true
+
+  education:
+    blocked_terms:
+      - "cheat on exam"
+      - "harm someone"
+      - "bypass school security"
