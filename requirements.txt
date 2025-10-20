@@ -3,6 +3,9 @@ fastapi
 uvicorn
 pydantic
 streamlit
+requests
 numpy
 pandas
+matplotlib
 pyyaml
+python-dotenv
