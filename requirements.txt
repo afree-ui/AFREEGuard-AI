@@ -10,3 +10,4 @@ matplotlib
 pyyaml
 python-dotenv
 Pillow
+py-algorand-sdk
