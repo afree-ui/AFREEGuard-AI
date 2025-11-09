@@ -3,7 +3,7 @@ fastapi
 uvicorn
 pydantic
 streamlit
-algosdk
+algosdk==2.5.0
 requests
 numpy
 pandas
@@ -11,4 +11,3 @@ matplotlib
 pyyaml
 python-dotenv
 Pillow
-py-algorand-sdk==1.21.0
