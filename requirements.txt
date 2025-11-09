@@ -3,7 +3,7 @@ fastapi
 uvicorn
 pydantic
 streamlit
-algosdk==2.5.0
+algosdk==2.7.0
 requests
 numpy
 pandas
