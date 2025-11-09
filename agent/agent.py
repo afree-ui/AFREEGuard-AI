@@ -110,7 +110,7 @@ def query(q: Query):
               reason=None, params=params)
     return {"ok": True, "blocked": False, "result": result}
 
-    @app.get("/")
-    def root():
-        """Root health endpoint for Render and Streamlit."""
-        return {"status": "ok", "message": "AFREEGuard AI Backend is running"}
+@app.get("/")
+def root():
+    """Root health endpoint for Render and Streamlit."""
+    return {"status": "ok", "message": "AFREEGuard AI Backend is running"}
