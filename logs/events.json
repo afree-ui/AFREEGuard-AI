@@ -1,1 +1,66 @@
 {"events":[{"domain":"afreeguard.ai","action":"test_security_event","blocked":false,"reason":"manual entry"}]}
+{"timestamp": "2025-11-05T11:43:06.034068", "action": "ALLOW", "blocked": true, "reason": "Smart contract anomaly", "block_hash": "BLOCK-404506", "params": {"txid": "TX-3062"}}
+{"timestamp": "2025-11-05T11:43:11.034319", "action": "BLOCK", "blocked": false, "reason": "Duplicate nonce", "block_hash": "BLOCK-250635", "params": {"txid": "TX-5924"}}
+{"timestamp": "2025-11-05T11:43:15.997178", "action": "BLOCK", "blocked": false, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-670713", "params": {"txid": "TX-9858"}}
+{"timestamp": "2025-11-05T11:43:20.997653", "action": "ALLOW", "blocked": true, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-502031", "params": {"txid": "TX-2973"}}
+{"timestamp": "2025-11-05T11:43:25.998056", "action": "BLOCK", "blocked": true, "reason": "Valid transaction", "block_hash": "BLOCK-591646", "params": {"txid": "TX-3996"}}
+{"timestamp": "2025-11-05T11:43:30.998356", "action": "BLOCK", "blocked": false, "reason": "Valid transaction", "block_hash": "BLOCK-354115", "params": {"txid": "TX-7072"}}
+{"timestamp": "2025-11-05T11:43:35.999124", "action": "BLOCK", "blocked": true, "reason": "Smart contract anomaly", "block_hash": "BLOCK-896449", "params": {"txid": "TX-7002"}}
+{"timestamp": "2025-11-05T11:43:40.999403", "action": "ALLOW", "blocked": true, "reason": "Valid transaction", "block_hash": "BLOCK-530061", "params": {"txid": "TX-5418"}}
+{"timestamp": "2025-11-05T11:43:45.999701", "action": "ALLOW", "blocked": false, "reason": "Duplicate nonce", "block_hash": "BLOCK-319113", "params": {"txid": "TX-3564"}}
+{"timestamp": "2025-11-05T11:43:50.999976", "action": "ALLOW", "blocked": true, "reason": "Duplicate nonce", "block_hash": "BLOCK-667362", "params": {"txid": "TX-5996"}}
+{"timestamp": "2025-11-05T11:43:56.000576", "action": "BLOCK", "blocked": true, "reason": "High gas usage", "block_hash": "BLOCK-756601", "params": {"txid": "TX-8349"}}
+{"timestamp": "2025-11-05T11:44:01.001304", "action": "BLOCK", "blocked": false, "reason": "High gas usage", "block_hash": "BLOCK-480022", "params": {"txid": "TX-9433"}}
+{"timestamp": "2025-11-05T11:44:06.001578", "action": "BLOCK", "blocked": false, "reason": "Duplicate nonce", "block_hash": "BLOCK-720493", "params": {"txid": "TX-5924"}}
+{"timestamp": "2025-11-05T11:44:11.002269", "action": "BLOCK", "blocked": false, "reason": "High gas usage", "block_hash": "BLOCK-354176", "params": {"txid": "TX-4670"}}
+{"timestamp": "2025-11-05T11:44:16.002572", "action": "ALLOW", "blocked": false, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-372871", "params": {"txid": "TX-1032"}}
+{"timestamp": "2025-11-05T11:44:21.002902", "action": "BLOCK", "blocked": true, "reason": "Duplicate nonce", "block_hash": "BLOCK-424802", "params": {"txid": "TX-9019"}}
+{"timestamp": "2025-11-05T11:44:26.003242", "action": "BLOCK", "blocked": true, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-419101", "params": {"txid": "TX-2233"}}
+{"timestamp": "2025-11-05T11:44:31.003820", "action": "BLOCK", "blocked": false, "reason": "Valid transaction", "block_hash": "BLOCK-185509", "params": {"txid": "TX-8623"}}
+{"timestamp": "2025-11-05T11:44:36.004126", "action": "BLOCK", "blocked": true, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-301837", "params": {"txid": "TX-7078"}}
+{"timestamp": "2025-11-05T11:44:41.004396", "action": "ALLOW", "blocked": false, "reason": "High gas usage", "block_hash": "BLOCK-218132", "params": {"txid": "TX-1180"}}
+{"timestamp": "2025-11-05T11:44:46.004859", "action": "BLOCK", "blocked": true, "reason": "Valid transaction", "block_hash": "BLOCK-841878", "params": {"txid": "TX-3740"}}
+{"timestamp": "2025-11-05T11:44:51.005143", "action": "ALLOW", "blocked": true, "reason": "High gas usage", "block_hash": "BLOCK-647030", "params": {"txid": "TX-1778"}}
+{"timestamp": "2025-11-05T11:44:56.005540", "action": "BLOCK", "blocked": false, "reason": "Duplicate nonce", "block_hash": "BLOCK-960893", "params": {"txid": "TX-1086"}}
+{"timestamp": "2025-11-05T11:45:01.005829", "action": "BLOCK", "blocked": false, "reason": "Duplicate nonce", "block_hash": "BLOCK-803523", "params": {"txid": "TX-9272"}}
+{"timestamp": "2025-11-05T11:45:06.009134", "action": "BLOCK", "blocked": false, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-110746", "params": {"txid": "TX-7374"}}
+{"timestamp": "2025-11-05T11:45:11.009534", "action": "ALLOW", "blocked": true, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-247941", "params": {"txid": "TX-8322"}}
+{"timestamp": "2025-11-05T11:45:16.009826", "action": "ALLOW", "blocked": false, "reason": "High gas usage", "block_hash": "BLOCK-450848", "params": {"txid": "TX-8351"}}
+{"timestamp": "2025-11-05T11:45:21.010132", "action": "ALLOW", "blocked": false, "reason": "Valid transaction", "block_hash": "BLOCK-809341", "params": {"txid": "TX-3318"}}
+{"timestamp": "2025-11-05T11:45:26.010410", "action": "BLOCK", "blocked": false, "reason": "Duplicate nonce", "block_hash": "BLOCK-399583", "params": {"txid": "TX-8522"}}
+{"timestamp": "2025-11-05T11:45:31.010736", "action": "BLOCK", "blocked": true, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-972264", "params": {"txid": "TX-7255"}}
+{"timestamp": "2025-11-05T11:45:36.011320", "action": "BLOCK", "blocked": false, "reason": "Smart contract anomaly", "block_hash": "BLOCK-154358", "params": {"txid": "TX-2260"}}
+{"timestamp": "2025-11-05T11:45:41.011640", "action": "ALLOW", "blocked": false, "reason": "Valid transaction", "block_hash": "BLOCK-652463", "params": {"txid": "TX-7930"}}
+{"timestamp": "2025-11-05T11:45:46.012060", "action": "ALLOW", "blocked": false, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-491906", "params": {"txid": "TX-4056"}}
+{"timestamp": "2025-11-05T11:45:51.012385", "action": "BLOCK", "blocked": false, "reason": "High gas usage", "block_hash": "BLOCK-240377", "params": {"txid": "TX-7794"}}
+{"timestamp": "2025-11-05T11:45:56.012735", "action": "ALLOW", "blocked": false, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-271921", "params": {"txid": "TX-2460"}}
+{"timestamp": "2025-11-05T11:46:01.013746", "action": "BLOCK", "blocked": true, "reason": "Duplicate nonce", "block_hash": "BLOCK-343700", "params": {"txid": "TX-2293"}}
+{"timestamp": "2025-11-05T11:46:06.014021", "action": "ALLOW", "blocked": true, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-570094", "params": {"txid": "TX-5872"}}
+{"timestamp": "2025-11-05T11:46:11.014342", "action": "BLOCK", "blocked": true, "reason": "Smart contract anomaly", "block_hash": "BLOCK-625933", "params": {"txid": "TX-2830"}}
+{"timestamp": "2025-11-05T11:46:16.014647", "action": "BLOCK", "blocked": true, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-782470", "params": {"txid": "TX-4390"}}
+{"timestamp": "2025-11-05T11:46:21.015070", "action": "BLOCK", "blocked": false, "reason": "Valid transaction", "block_hash": "BLOCK-601317", "params": {"txid": "TX-3940"}}
+{"timestamp": "2025-11-05T11:46:26.015392", "action": "BLOCK", "blocked": true, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-627575", "params": {"txid": "TX-5916"}}
+{"timestamp": "2025-11-05T11:46:31.015696", "action": "ALLOW", "blocked": false, "reason": "Duplicate nonce", "block_hash": "BLOCK-278425", "params": {"txid": "TX-8645"}}
+{"timestamp": "2025-11-05T11:46:36.015994", "action": "BLOCK", "blocked": false, "reason": "High gas usage", "block_hash": "BLOCK-328997", "params": {"txid": "TX-1846"}}
+{"timestamp": "2025-11-05T11:46:41.016330", "action": "BLOCK", "blocked": false, "reason": "Smart contract anomaly", "block_hash": "BLOCK-543040", "params": {"txid": "TX-9912"}}
+{"timestamp": "2025-11-05T11:46:46.016646", "action": "BLOCK", "blocked": false, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-881171", "params": {"txid": "TX-3391"}}
+{"timestamp": "2025-11-05T11:46:51.016938", "action": "ALLOW", "blocked": true, "reason": "High gas usage", "block_hash": "BLOCK-878331", "params": {"txid": "TX-7535"}}
+{"timestamp": "2025-11-05T11:46:56.017300", "action": "ALLOW", "blocked": false, "reason": "Valid transaction", "block_hash": "BLOCK-918655", "params": {"txid": "TX-8029"}}
+{"timestamp": "2025-11-05T11:47:01.017871", "action": "ALLOW", "blocked": false, "reason": "Smart contract anomaly", "block_hash": "BLOCK-449477", "params": {"txid": "TX-5886"}}
+{"timestamp": "2025-11-05T11:47:06.018183", "action": "BLOCK", "blocked": false, "reason": "Smart contract anomaly", "block_hash": "BLOCK-777821", "params": {"txid": "TX-3570"}}
+{"timestamp": "2025-11-05T11:47:11.018478", "action": "ALLOW", "blocked": false, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-172144", "params": {"txid": "TX-8376"}}
+{"timestamp": "2025-11-05T11:47:16.019334", "action": "ALLOW", "blocked": true, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-346080", "params": {"txid": "TX-6287"}}
+{"timestamp": "2025-11-05T11:47:21.019649", "action": "BLOCK", "blocked": true, "reason": "High gas usage", "block_hash": "BLOCK-640075", "params": {"txid": "TX-7193"}}
+{"timestamp": "2025-11-05T11:47:26.019957", "action": "BLOCK", "blocked": false, "reason": "Duplicate nonce", "block_hash": "BLOCK-564198", "params": {"txid": "TX-8092"}}
+{"timestamp": "2025-11-05T11:47:31.020287", "action": "BLOCK", "blocked": true, "reason": "High gas usage", "block_hash": "BLOCK-840359", "params": {"txid": "TX-1396"}}
+{"timestamp": "2025-11-05T11:47:36.020998", "action": "ALLOW", "blocked": true, "reason": "Valid transaction", "block_hash": "BLOCK-614241", "params": {"txid": "TX-1256"}}
+{"timestamp": "2025-11-05T11:47:41.021323", "action": "BLOCK", "blocked": false, "reason": "High gas usage", "block_hash": "BLOCK-785233", "params": {"txid": "TX-1540"}}
+{"timestamp": "2025-11-05T11:47:46.021641", "action": "ALLOW", "blocked": false, "reason": "Valid transaction", "block_hash": "BLOCK-216158", "params": {"txid": "TX-1462"}}
+{"timestamp": "2025-11-05T11:47:51.021948", "action": "BLOCK", "blocked": true, "reason": "Smart contract anomaly", "block_hash": "BLOCK-580833", "params": {"txid": "TX-2943"}}
+{"timestamp": "2025-11-05T11:47:56.022340", "action": "BLOCK", "blocked": false, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-481154", "params": {"txid": "TX-5539"}}
+{"timestamp": "2025-11-05T11:48:01.022888", "action": "ALLOW", "blocked": false, "reason": "Smart contract anomaly", "block_hash": "BLOCK-740095", "params": {"txid": "TX-7823"}}
+{"timestamp": "2025-11-05T11:48:06.023287", "action": "ALLOW", "blocked": true, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-815870", "params": {"txid": "TX-4053"}}
+{"timestamp": "2025-11-05T11:48:11.023809", "action": "BLOCK", "blocked": false, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-974583", "params": {"txid": "TX-5412"}}
+{"timestamp": "2025-11-05T11:48:16.024423", "action": "BLOCK", "blocked": false, "reason": "Valid transaction", "block_hash": "BLOCK-554178", "params": {"txid": "TX-4982"}}
+{"timestamp": "2025-11-05T11:48:21.024795", "action": "BLOCK", "blocked": false, "reason": "Valid transaction", "block_hash": "BLOCK-930839", "params": {"txid": "TX-8294"}}
+{"timestamp": "2025-11-05T11:48:26.025123", "action": "ALLOW", "blocked": false, "reason": "Suspicious pattern detected", "block_hash": "BLOCK-833006", "params": {"txid": "TX-5290"}}
