@@ -1,0 +1,220 @@
+/* ===== AFREEGuard AI: Light Gold & Blue Theme ===== */
+
+/* App background */
+[data-testid="stApp"] {
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    font-family: "Source Sans Pro", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: #F5F7FA;
+    border-right: 1px solid #E0E0E0;
+    color: #1A1A1A;
+}
+
+/* Headers */
+h1, h2, h3, h4 {
+    font-family: "Montserrat", sans-serif;
+    color: #003366;
+    font-weight: 700;
+}
+
+/* Metrics cards */
+[data-testid="stMetric"] {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Tables */
+[data-testid="stDataFrame"] {
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+    background: #CCCCCC;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #999999;
+}
+
+/* Links */
+a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+}
+a:hover {
+    color: #EAC349;
+}
+
+/* Status indicators */
+.success {
+    color: #34D399 !important;
+}
+.warning {
+    color: #EAC349 !important;
+}
+.error {
+    color: #EF4444 !important;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: #555555;
+    font-size: 0.85rem;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #E0E0E0;
+}
+
+/* Table row highlights */
+tr:hover {
+    background-color: #F5F7FA;
+}
+
+/* Sidebar button hover */
+div.stButton > button {
+    background-color: #003366;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 0.5em 1em;
+    font-weight: 600;
+}
+div.stButton > button:hover {
+    background-color: #EAC349;
+    color: #003366;
+}
+/* ===== Enhanced Recent Events Table ===== */
+
+/* General Table Background */
+[data-testid="stDataFrame"] {
+    background: #FFFFFF !important;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Table Header */
+thead tr {
+    background-color: #F5F7FA !important;
+    color: #003366 !important;
+    font-weight: 600 !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Table Rows */
+tbody tr {
+    background-color: #FFFFFF !important;
+    color: #1A1A1A !important;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #FFF9E6 !important; /* subtle gold tint */
+}
+
+/* Blocked & Allowed Row Highlights */
+tbody tr.allowed {
+    background-color: #E8FFF3 !important; /* light mint green */
+}
+
+tbody tr.blocked {
+    background-color: #FFEAEA !important; /* light red */
+}
+
+/* Links inside table */
+tbody a {
+    color: #003366 !important;
+    font-weight: 500;
+    text-decoration: none;
+}
+tbody a:hover {
+    color: #EAC349 !important;
+    text-decoration: underline;
+}
+
+/* Table Font */
+table {
+    font-size: 0.9rem !important;
+    border-collapse: collapse;
+}
+
+/* Scrollable table */
+[data-testid="stDataFrame"] table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* === AFREEGuard Animated Header === */
+
+/* Gradient Animation Keyframes */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.afg-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #002244, #0044AA, #FFD700);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Logo with Glow Effect */
+.afg-header-logo img {
+    height: 70px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+.afg-header-logo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 4px rgba(255, 215, 0, 0.6);
+}
+
+/* Title & Subtitle */
+.afg-header-text h1 {
+    color: white;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 1.9rem;
+    letter-spacing: 0.5px;
+}
+
+.afg-header-text p {
+    color: #EAEAEA;
+    font-size: 1rem;
+    margin: 3px 0 0 0;
+    font-weight: 400;
+}
