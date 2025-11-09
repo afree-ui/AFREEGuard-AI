@@ -110,6 +110,20 @@ def query(q: Query):
               reason=None, params=params)
     return {"ok": True, "blocked": False, "result": result}
 
+@app.get("/api/logs")
+def get_logs():
+    """Return the latest blockchain security events."""
+    try:
+        events = []
+        if EVENTS_FILE.exists():
+            with EVENTS_FILE.open("r", encoding="utf-8") as f:
+                for line in f:
+                    events.append(json.loads(line))
+        # Return last 50 events (most recent last)
+        return {"ok": True, "events": events[-50:]}
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
+
 @app.get("/")
 def root():
     """Root health endpoint for Render and Streamlit."""
