@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Guardrail PoC — Safe Autonomous AI Agents
 
 Minimal scaffold for a 1–3 month Proof of Concept:
@@ -143,5 +142,5 @@ MIT License – Free to use, fork, and contribute.
 
 ✨ *Built with a vision for a safer AI future, powered by blockchain accountability.*  
 
-👉 "Updated README with project details".
->>>>>>> d2c49f20d1243e64285c18b492bc373c87af9f5f
+
+
