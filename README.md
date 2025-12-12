@@ -1,146 +1,174 @@
-# Guardrail PoC — Safe Autonomous AI Agents
+AFREEGuard AI — A Security & Governance Layer for Autonomous AI Agents
 
-Minimal scaffold for a 1–3 month Proof of Concept:
-- Rule-based Guardrail Layer
-- Adversarial Test Harness
-- Monitoring Dashboard
-- Integration with an open-weight agent framework (via LangChain)
+AFREEGuard AI is a security, permissions, and audit framework for autonomous AI agents.
 
-## Quick Start
+It provides runtime guardrails that ensure AI agents operating in the real world — calling APIs, accessing data, executing transactions, or triggering workflows — do so safely, transparently, and with accountability.
 
-1) Create a virtualenv and install requirements:
+This repository contains a 1–3 month Proof of Concept (PoC) demonstrating the core architecture and safety flow behind AFREEGuard AI.
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+⸻
 
-2) Run the **agent API** (FastAPI):
+🎯 What This PoC Demonstrates
 
-   ```bash
-   uvicorn agent.agent:app --reload --port 8000
-   ```
+This PoC focuses on architecture and control, not production UX.
 
-3) Run the **dashboard** (Streamlit) in another terminal:
+It includes:
+	•	🛡️ Rule-based Guardrail Layer
+Runtime policies that approve, block, or flag AI agent actions.
+	•	🧪 Adversarial Test Harness
+Red-team prompts and fuzzing to simulate unsafe, biased, or manipulated agent behavior.
+	•	📊 Monitoring Dashboard
+Real-time visibility into agent decisions, risk flags, and blocked actions.
+	•	🔌 Agent Integration
+A LangChain-based open-weight agent exposed via a FastAPI interface.
 
-   ```bash
-   streamlit run dashboard/app.py
-   ```
+The goal is to show how autonomous AI can be controlled at runtime, not just evaluated after the fact.
 
-4) Run the **adversarial tests**:
+⸻
 
-   ```bash
-   python tests/adversarial.py
-   ```
+🚨 Problem We Solve
 
-## Structure
-- `agent/agent.py` — simple LangChain-based agent exposed as an API.
-- `guardrails/rules.py` — define policies/rules.
-- `guardrails/engine.py` — guardrail middleware to approve/block actions.
-- `executor/actions.py` — safe action executors (education/finance/web3).
-- `dashboard/app.py` — Streamlit UI for logs/metrics.
-- `tests/adversarial.py` — red-team prompts and fuzzing harness.
-- `data/policies.yaml` — editable rules/policies.
-- `logs/` — runtime JSONL logs (created on first run).
+Autonomous AI agents are increasingly capable of taking real-world actions:
+	•	Executing transactions
+	•	Calling APIs
+	•	Accessing sensitive data
+	•	Triggering workflows
+	•	Interacting with other agents
 
-## Notes
-- This PoC uses stubbed open-weight calls to keep it offline. Replace the
-  model call with your preferred local/open-weight LLM wrapper.
-- The goal is to demonstrate *architecture & safety flow*, not final UX.
-=======
-# 🤖 AFREEGuard-AI  
-**Safe AI Guardrails with On-Chain Policy Governance (Algorand-powered)**  
+However, today’s AI systems typically operate with:
+	1.	No Identity
+→ Agents cannot be uniquely identified, authenticated, or attributed.
+	2.	No Permission Boundaries
+→ Agents can perform sensitive actions without explicit approval or limits.
+	3.	No Runtime Monitoring
+→ Unsafe behavior, bias, manipulation, or intent drift goes undetected after deployment.
+	4.	No Accountability or Auditability
+→ Actions are often untraceable and unverifiable.
+	5.	No Built-in Compliance
+→ Existing AI tooling is not designed for autonomous agents operating under regulatory frameworks (GDPR, AI Act, financial compliance).
 
----
+This creates significant risk for fintech, enterprises, public services, and society.
 
-## 🌍 Vision  
-AI is shaping the future, but **safety, accountability, and trust** are missing.  
-AFREEGuard-AI bridges **AI safety + blockchain accountability**, ensuring that AI systems operate with **transparency, fairness, and compliance** — all governed on-chain.  
+AFREEGuard AI exists to make autonomous AI agents safe, controllable, and accountable by default.
 
----
+⸻
 
-## 🚀 What We’re Building  
-- 🛡️ **AI Guardrails** – Secure, explainable, and bias-checked AI models  
-- 🔗 **Algorand-powered Governance** – DAO-style decision making with transparency  
-- 💰 **Tokenized Incentives** – Encourage responsible data sharing & model contributions  
-- 📊 **User Dashboard** – Simple, human-friendly AI governance interface  
+🔗 Blockchain-Agnostic by Design
 
----
+AFREEGuard AI is blockchain-agnostic.
 
-## 🎯 Problem We Solve  
-1. **Data Privacy** → Preserving sensitive information with on-chain proofs  
-2. **Incentivization** → Token rewards for ethical participation and contributions  
-3. **Verification** → Ensuring only trusted actors and data enter the ecosystem  
-4. **Usability** → An accessible dashboard for compliance teams, startups, and Web3 orgs  
+The core security, permissions, and monitoring logic operates off-chain and can be deployed in:
+	•	Enterprise environments
+	•	Regulated or sovereign systems
+	•	Cloud, VPC, or on-prem deployments
 
----
+When immutable, third-party-verifiable audit trails are required, AFREEGuard can optionally anchor events to:
+	•	Algorand
+	•	Ethereum / EVM chains
+	•	Cosmos-based chains
+	•	Hyperledger / private ledgers
+	•	Or traditional off-chain audit stores
 
-## 🛠️ Why Algorand?  
-- ⚡ **Fast & Scalable** – Handles high-volume governance and auditing  
-- 🔒 **Secure** – Battle-tested blockchain for compliance-critical use cases  
-- 🌱 **Green Blockchain** – Energy-efficient foundation for responsible AI  
+Blockchain integration is optional, not a dependency.
 
----
+⸻
 
-## 🛠️ PoC Architecture
-	1.	Inputs → Unsafe or biased AI outputs.
-	2.	Guardrail Engine → Detects, flags, or blocks unsafe content.
-	3.	Blockchain Layer (Algorand) → Stores policies + governance votes as smart contracts.
-	4.	Outputs → Safe AI response + auditable governance record.
- 
----
+Why Algorand Was Used in This PoC
 
-## 🎥 Demo Proof of Concept (PoC)  
-▶️ [Watch the PoC Demo on YouTube](https://youtu.be/sq8PRjW-Kqw?si=W6dX1eYOILQFoHwk)  
+Algorand was selected solely for the Proof of Concept because it offers:
+	•	Fast finality and low latency
+	•	Low transaction costs
+	•	Strong security guarantees
+	•	Energy-efficient design
 
----
+This made it suitable for rapidly prototyping immutable audit logging without imposing blockchain lock-in on the AFREEGuard architecture.
 
-## 📌 Roadmap (Next 6–12 Months)  
-- ✅ Q4 2025: Build & validate PoC (half done)  
-- 🚧 Q1 2026: MVP with governance & incentives  
-- 🔑 Q2 2026: Closed beta with startups, compliance teams, Web3 orgs  
-- 🌍 Q4 2026: Public launch & early adopters program  
+⸻
 
----
+🧱 PoC Architecture (Simplified)
+	1.	Agent Input
+→ User or system triggers an agent action.
+	2.	Guardrail Engine
+→ Policies evaluate the action and determine whether to approve, block, or flag it.
+	3.	Audit Layer (Optional)
+→ Critical decisions are logged and optionally anchored to a blockchain.
+	4.	Agent Output
+→ Safe response + traceable decision record.
 
-## 🆚 Competitors & Differentiation  
-While some projects focus on **AI auditing** or **blockchain DAOs**,  
-**AFREEGuard-AI is unique** because it **integrates AI safety guardrails directly with on-chain governance and token incentives** — bridging two worlds.  
+⸻
 
----
+⚡ Quick Start
 
-## 📈 Target Users
-	•	AI startups (need trust + compliance tools).
-	•	Web3 projects integrating AI agents.
-	•	Enterprises & regulators needing auditable AI safety.
+1) Install dependencies
 
----
+pip install -r requirements.txt
 
-## 👥 Team  
-- **Armand Byamha Ngadou** – Entrepreneur, Author, Founder & Visionary (Research, AI, Web3, Governance)  
-- Advisors & collaborators: AI engineers, blockchain devs, compliance experts  
+2) Run the agent API (FastAPI)
 
----
+uvicorn agent.agent:app --reload --port 8000
 
-## 📂 Repository  
-This repo will host:  
-- 🔧 Governance smart contracts (Algorand)  
-- 🤖 AI guardrail models & APIs  
-- 📄 Documentation & whitepapers  
+3) Run the monitoring dashboard (Streamlit)
 
----
+streamlit run dashboard/app.py
 
-## 🤝 Contributing
+4) Run adversarial tests
 
-We welcome contributions! Please open issues, share ideas, or create pull requests to help us improve AFREEGuard-AI.
-
----
-
-## 📜 License  
-MIT License – Free to use, fork, and contribute. 
-
----
-
-✨ *Built with a vision for a safer AI future, powered by blockchain accountability.*  
+python tests/adversarial.py
 
 
+⸻
+
+📁 Project Structure
+	•	agent/agent.py — LangChain-based agent exposed as an API
+	•	guardrails/rules.py — Policy and rule definitions
+	•	guardrails/engine.py — Guardrail middleware (approve / block logic)
+	•	executor/actions.py — Safe action executors
+	•	dashboard/app.py — Streamlit monitoring UI
+	•	tests/adversarial.py — Red-team prompts and fuzzing harness
+	•	data/policies.yaml — Editable policy configuration
+	•	logs/ — Runtime JSONL logs (created on first run)
+
+⸻
+
+🧠 Notes
+	•	This PoC uses stubbed open-weight model calls to remain offline and reproducible.
+	•	Replace the model call with your preferred local or open-weight LLM wrapper.
+	•	The emphasis is on runtime safety flow, not final product UX.
+
+⸻
+
+🗺️ Roadmap (High Level)
+	•	PoC (current)
+Core guardrails, monitoring, and audit flow
+	•	V1
+Agent identity, permissions engine, structured audit service
+	•	V2
+Behavioral monitoring, anomaly detection, enterprise deployment options
+	•	V3
+Multi-agent governance, cross-system trust, optional on-chain registries
+
+⸻
+
+👤 Maintainer
+
+Armand Byamha
+Founder & Architect — AFREEGuard AI
+AFREE Labs / WOW GLOBAL SOLUTIONS LTD (Scotland)
+
+⸻
+
+🤝 Contributing
+
+Contributions are welcome.
+Please open an issue to discuss ideas or submit a pull request.
+
+⸻
+
+📜 License
+
+MIT License — free to use, fork, and contribute.
+
+⸻
+
+✨ AFREEGuard AI is built to ensure autonomous AI systems act safely, transparently, and under human-defined rules.
 
