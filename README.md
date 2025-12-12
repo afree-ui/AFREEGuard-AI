@@ -30,6 +30,20 @@ The goal is to show **how autonomous AI can be controlled at runtime**, not just
 
 ---
 
+## 🎥 Proof of Concept Demo
+
+This short video demonstrates the AFREEGuard AI Proof of Concept in action, including:
+
+- Runtime guardrail evaluation  
+- Approve / block decision flow  
+- Adversarial testing scenarios  
+- Monitoring dashboard visibility  
+
+▶️ **Watch the PoC Demo on YouTube**  
+https://youtu.be/PU7I87FU3yQ
+
+---
+
 ## 🚨 Problem We Solve
 
 Autonomous AI agents are increasingly capable of taking **real-world actions**, including:
